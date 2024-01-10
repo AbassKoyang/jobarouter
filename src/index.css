@@ -51,6 +51,10 @@ header nav a.active{
 
 /* page content */
 
+main{
+  max-width: 1200px;
+  padding: 40px auto;
+}
 
 /* help layout */
 
