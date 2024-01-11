@@ -15,22 +15,9 @@ const CareerDetails = () => {
 }
 
 export const careerDetailsLoader = async ({params}) => {
-     try {
     const { id } = params;
     const res = await fetch(`http://localhost:4000/careers/${id}`);
-
-    if (!res.ok) {
-      throw new Error(`HTTP error! Status: ${res.status}`);
+    return res.json();
     }
-
-    const data = await res.json();
-    console.log(data);
-
-    return data;
-  } catch (error) {
-    console.error('Error fetching career details:', error.message);
-    throw error;
-  }
-}
 
 export default CareerDetails
