@@ -27,7 +27,6 @@ button {
 }
 
 /* navbar */
-
 header nav{
   display: flex;
   align-items: center;
@@ -54,6 +53,7 @@ header nav a.active{
 main{
   max-width: 1200px;
   padding: 40px auto;
+  margin-top: 50px;
 }
 
 /* help layout */
