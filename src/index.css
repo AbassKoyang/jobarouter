@@ -53,7 +53,7 @@ header nav a.active{
 main{
   max-width: 1200px;
   padding: 40px auto;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 /* help layout */
@@ -134,3 +134,21 @@ form label span {
 
 
 /* breadcrumbs */
+.breadcrumbs {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.breadcrumbs > *{
+  display: inline-block;
+  margin-right: 10px;
+}
+.breadcrumbs .crumb:after {
+  content: '>';
+  margin-left: 10px;
+}
+.breadcrumbs .crumb:last-child:after {
+  display: none;
+}
+.breadcrumbs .crumb a {
+  color: #ddd;
+}

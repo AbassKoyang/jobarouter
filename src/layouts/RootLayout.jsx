@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink, Outlet } from 'react-router-dom';
+import BreadCrumbs from '../components/BreadCrumbs';
 
 const RootLayout = () => {
   return (
@@ -13,6 +14,7 @@ const RootLayout = () => {
             <NavLink to='careers'>Careers</NavLink>
             </nav>
         </header>
+        <BreadCrumbs />
 
         <main>
             <Outlet />
